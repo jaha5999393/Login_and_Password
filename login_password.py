@@ -1,1 +1,1 @@
-print("salom bollallar")
+print("ghost recon")
