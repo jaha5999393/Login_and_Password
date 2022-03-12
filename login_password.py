@@ -1,1 +1,1 @@
-print("ghost recon")
+print("Darsni qil ghost recon o'ynaguncha")
