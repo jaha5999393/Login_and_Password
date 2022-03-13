@@ -1,0 +1,1 @@
+login=Botir1202|password=botir1|name=Botirali|age=18|kasbi=Dasturchi|password1=botir1
