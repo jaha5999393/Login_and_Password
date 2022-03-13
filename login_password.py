@@ -1,7 +1,7 @@
 
 import sys
 
-
+print("Botirali")
 class User:
     def __init__(self, user_info_file="user.txt"):
         self.name = None
