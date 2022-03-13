@@ -86,6 +86,19 @@ class User:
         self.age = None
         self.welcome()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     def log_in(self):
         if self.login is not None and self.password is not None:
             print(f"Siz  allaqachon Tizimda borsiz ")
@@ -169,3 +182,4 @@ class User:
 
 
 person = User()
+print("log_in qismi maniki")
