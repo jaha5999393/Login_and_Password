@@ -1,7 +1,6 @@
-
 import sys
 
-print("Botirali")
+
 class User:
     def __init__(self, user_info_file="user.txt"):
         self.name = None
@@ -13,7 +12,6 @@ class User:
         self.user_info_file = user_info_file
         self.all_users = []
         self.welcome()
-
 
     def welcome(self):
         log = input("""
@@ -76,7 +74,8 @@ class User:
             self.password1 = input("Passwordni qayta kiriting: ").strip()
 
         with open(self.user_info_file, "a") as file:
-            file.write(f"login={self.login}|password={self.password}|name={self.name}|age={self.age}|kasbi={self.kasbi}|password1={self.password1}\n")
+            file.write(
+                f"login={self.login}|password={self.password}|name={self.name}|age={self.age}|kasbi={self.kasbi}|password1={self.password1}\n")
             print("Siz ro'yhattan o'ttingiz")
             self.wel_in()
         self.name = None
@@ -157,8 +156,8 @@ class User:
         with open(self.user_info_file) as file:
             for user_row in file.read().split():
                 user_dic = {
-                 user_row.split("|")[0].split("=")[0]: user_row.split("|")[0].split("=")[1],
-                 user_row.split("|")[1].split("=")[0]: user_row.split("|")[1].split("=")[1],
+                    user_row.split("|")[0].split("=")[0]: user_row.split("|")[0].split("=")[1],
+                    user_row.split("|")[1].split("=")[0]: user_row.split("|")[1].split("=")[1],
                 }
                 self.all_users.append(user_dic)
 
@@ -167,7 +166,6 @@ class User:
             if self.login == row["login"] and self.password == row["password"]:
                 return True
         return False
-print("000000")
+
 
 person = User()
-
