@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-print("1223")
-=======
-# import os
+
 import sys
 
 
@@ -170,10 +167,7 @@ class User:
             if self.login == row["login"] and self.password == row["password"]:
                 return True
         return False
-
+print("000000")
 
 person = User()
 
-
-print("oxshadimi")
->>>>>>> 8a7370cc62ccda94ee1f286d24701cb1e15cd69f
